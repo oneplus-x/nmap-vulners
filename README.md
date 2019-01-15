@@ -26,6 +26,6 @@ The only thing you should always keep in mind is that the script depends on havi
 
 ## Usage
     Use it as straightforward as you can:
-        nmap -sV --script vulners <target>
+        nmap -sV --script vulners 80.74.154.114
         
 It is KISS after all.
