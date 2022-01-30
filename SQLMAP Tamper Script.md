@@ -90,7 +90,7 @@ Function: Space ==> %00
 Platform: Microsoft Access
 example
 1 AND 1=1 ==> 1 AND 1=1%00
-base64encode.py
+### base64encode.py
 Function: base64 encode
 Platform: All
 example
@@ -99,22 +99,24 @@ example
 Function: > ==> NOT BETWEEN 0 AND
 Platform: Mssql2005、MySQL 4, 5.0 and 5.5、Oracle 10g、PostgreSQL 8.3, 8.4, 9.0
 example
+~~~
 1 AND A > B — ==> 1 AND A NOT BETWEEN 0 AND B — ```、```1 AND A = B — ==> 1 AND A BETWEEN B AND B —
+~~~
 ### bluecoat.py
 Function: Space ==> %09
 Platform: MySQL 5.1, SGOS
 example
-SELECT id FROM users WHERE id = 1 ==> SELECT%09id FROM%09users WHERE%09id LIKE 1
+~~~SELECT id FROM users WHERE id = 1 ==> SELECT%09id FROM%09users WHERE%09id LIKE 1~~~
 ### chardoubleencode.py
 Function: Double url encoding
 Platform: All
 example
-SELECT FIELD FROM%20TABLE ==> %2553%2545%254C%2545%2543%2554%2520%2546%2549%2545%254C%2544%2520%2546%2552%254F%254D%2520%2554%2541%2542%254C%2545
+~~~SELECT FIELD FROM%20TABLE ==> %2553%2545%254C%2545%2543%2554%2520%2546%2549%2545%254C%2544%2520%2546%2552%254F%254D%2520%2554%2541%2542%254C%2545~~~
 ### charencode.py
 Function: url encoding
 Platform: Mssql 2005、MySQL 4, 5.0 and 5.5、Oracle 10g、PostgreSQL 8.3, 8.4, 9.0
 example
-SELECT FIELD FROM%20TABLE ==> %53%45%4C%45%43%54%20%46%49%45%4C%44%20%46%52%4F%4D%20%54%41%42%4C%45
+~~~SELECT FIELD FROM%20TABLE ==> %53%45%4C%45%43%54%20%46%49%45%4C%44%20%46%52%4F%4D%20%54%41%42%4C%45~~~
 ### charunicodeencode.py
 Function: escape code
 Platform: Mssql 2000,2005、MySQL 5.1.56、PostgreSQL 9.0.3 ASP/ASP.NET
