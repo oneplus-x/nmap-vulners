@@ -34,5 +34,10 @@ ln -s `pwd`/scipag_vulscan /usr/share/nmap/scripts/vulscan
 ~~~	
 
 ## Usage
-![Result example](https://github.com/anonymansz/nmap-vulners/blob/master/paths_regex_example.png)
+Use it as straightforward as you can:
 ![Result example](https://github.com/anonymansz/nmap-vulners/blob/master/simple_regex_example.png)
+~~~	
+nmap -sV --script vulners 80.74.154.114
+~~~	
+![Result example](https://github.com/anonymansz/nmap-vulners/blob/master/paths_regex_example.png)
+It is KISS after all.
