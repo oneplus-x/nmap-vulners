@@ -1,5 +1,4 @@
-# sqlmap-tamper
-SQLmap tamper scripts 
+# SQLmap tamper scripts 
 
 General tamper option and tamper's list
 ```
