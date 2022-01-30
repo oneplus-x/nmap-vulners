@@ -7,7 +7,7 @@
 
 NSE script using some well-known service to provide info on vulnerabilities
 
-![Result example](example.png)
+![Result example](https://github.com/anonymansz/nmap-vulners/blob/master/example.png)
 
 ## Dependencies:
      nmap libraries:
