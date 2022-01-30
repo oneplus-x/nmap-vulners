@@ -32,16 +32,12 @@ cd /usr/share/nmap/scripts/
 git clone https://github.com/scipag/vulscan scipag_vulscan
 ln -s `pwd`/scipag_vulscan /usr/share/nmap/scripts/vulscan
 ~~~	
-
-## Usage
-
 Use it as straightforward as you can:
-
-![Result example](https://github.com/anonymansz/nmap-vulners/blob/master/simple_regex_example.png)
-
 ~~~	
 nmap -sV --script vulners 80.74.154.114
 ~~~
+
+![Result example](https://github.com/anonymansz/nmap-vulners/blob/master/simple_regex_example.png)
 
 ![Result example](https://github.com/anonymansz/nmap-vulners/blob/master/paths_regex_example.png)
 
