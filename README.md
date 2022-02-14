@@ -5,7 +5,7 @@ Nmap is released under a custom license, which is based on (but not compatible
 with) GPLv2. The Nmap license allows free usage by end users, and we also offer
 a commercial license for companies that wish to redistribute Nmap technology
 with their products. See [Nmap Copyright and Licensing](https://nmap.org/book/man-legal.html)
-for full details.
+for full [details](scripts/nmap-vulners/README.md).
 
 The latest version of this software as well as binary installers for Windows,
 macOS, and Linux (RPM) are available from
