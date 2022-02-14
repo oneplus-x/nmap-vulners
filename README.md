@@ -44,5 +44,6 @@ files.
 
 Additional
 ----------
-[nmap-vulners](scripts/nmap-vulners/README.md)
-[tamperscript-list](scripts/nmap-vulners/tamper_script.md)
+* [nmap-vulners](scripts/nmap-vulners/README.md)
+
+* [tamperscript-list](scripts/nmap-vulners/tamper_script.md)
