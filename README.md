@@ -1,31 +1,49 @@
-# nmap_vulners
+Nmap [![Build Status](https://travis-ci.org/nmap/nmap.svg?branch=master)](https://travis-ci.org/nmap/nmap) [![Language grade: C/C++](https://img.shields.io/lgtm/grade/cpp/g/nmap/nmap.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/nmap/nmap/context:cpp) [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/nmap/nmap.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/nmap/nmap/context:python) [![Total alerts](https://img.shields.io/lgtm/alerts/g/nmap/nmap.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/nmap/nmap/alerts/)
+====
 
-[![Current Release](https://img.shields.io/github/release/vulnersCom/nmap-vulners.svg "Current Release")](https://github.com/vulnersCom/nmap-vulners/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/vulnersCom/nmap-vulners/total.svg "Downloads")](https://github.com/vulnersCom/nmap-vulners/releases) [![PayPal](https://img.shields.io/badge/donate-PayPal-green.svg)](https://paypal.me/videns)
+Nmap is released under a custom license, which is based on (but not compatible
+with) GPLv2. The Nmap license allows free usage by end users, and we also offer
+a commercial license for companies that wish to redistribute Nmap technology
+with their products. See [Nmap Copyright and Licensing](https://nmap.org/book/man-legal.html)
+for full details.
 
-## Description
+The latest version of this software as well as binary installers for Windows,
+macOS, and Linux (RPM) are available from
+[Nmap.org](https://nmap.org/download.html)
 
-NSE script using some well-known service to provide info on vulnerabilities
+Full documentation is also available
+[on the Nmap.org website](https://nmap.org/docs.html).
 
-![Result example](example.png)
+Questions and suggestions may be sent to
+[the Nmap-dev mailing list](https://nmap.org/mailman/listinfo/dev).
 
-## Dependencies:
-     nmap libraries:
-         http
-         json
-         string
+Installing
+----------
+Ideally, you should be able to just type:
 
-The only thing you should always keep in mind is that the script depends on having software versions at hand, so it only works with -sV flag.
+    ./configure
+    make
+    make install
 
-## Installation
-     locate, where your nmap scripts are located in your system
-         for *nix system it might be  ~/.nmap/scripts/ or $NMAPDIR
-         for Mac it might be /usr/local/Cellar/nmap/<version>/share/nmap/scripts/
-         for Windows it might be C:\Program Files (x86)\Nmap\scripts
-     copy the provided script (vulners.nse) into that directory
+For far more in-depth compilation, installation, and removal notes, read the
+[Nmap Install Guide](https://nmap.org/book/install.html) on Nmap.org.
 
-## Usage
-    Use it as straightforward as you can:
-        nmap -sV --script vulners 80.74.154.114
-        
-It is KISS after all.
+Using Nmap
+----------
+Nmap has a lot of features, but getting started is as easy as running `nmap
+scanme.nmap.org`. Running `nmap` without any parameters will give a helpful
+list of the most common options, which are discussed in depth in [the man
+page](https://nmap.org/book/man.html). Users who prefer a graphical interface
+can use the included [Zenmap front-end](https://nmap.org/zenmap/).
+
+Contributing
+------------
+Information about filing bug reports and contributing to the Nmap project can
+be found in the [HACKING](HACKING) and [CONTRIBUTING.md](CONTRIBUTING.md)
+files.
+
+Additional
+----------
+* [nmap-vulners](scripts/nmap-vulners/README.md)
+
+* [tamperscript-list](scripts/nmap-vulners/tamper_script.md)
